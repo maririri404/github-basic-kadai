@@ -1,0 +1,18 @@
+kurogomemarika@mariMac ~ % 
+kurogomemarika@mariMac ~ %  mkdir git_challenge
+kurogomemarika@mariMac ~ % cd git_challenge
+kurogomemarika@mariMac git_challenge % touch hello_world.txt
+kurogomemarika@mariMac git_challenge % echo "Hello,world!" >> hello_world.txt
+kurogomemarika@mariMac git_challenge % echo "Hello,world" >> hello_world.txt
+kurogomemarika@mariMac git_challenge % git add hello_world.txt
+kurogomemarika@mariMac git_challenge % git commit -m "hello_world,txtを追加"
+[master f94d338] hello_world,txtを追加
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+kurogomemarika@mariMac git_challenge % echo "こんにちは、世界！" >> hello_world.txt
+kurogomemarika@mariMac git_challenge % git add hello_world.txt
+kurogomemarika@mariMac git_challenge % git commit -m"日本語訳を追記"
+[master 6a475b2] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+kurogomemarika@mariMac git_challenge % git log --oneline
+6a475b2 (HEAD -> master) 日本語訳を追記
+f94d338 hello_world,txtを追加
